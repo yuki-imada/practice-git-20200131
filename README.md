@@ -68,6 +68,10 @@
   * `git checkout master`
   * `git checkout branch_name`
 
+* 追跡ブランチの更新
+  * `git fetch --prune`
+    * `--prune`でリモート上で削除されたブランチをローカル上でも削除する
+
 ### コミット操作
 
 * コードのコミット
@@ -76,7 +80,6 @@
       * `.`で全ファイル
   * コミットの登録(コメント必須)
     * `git commit -m 'add your comment'`
-
 
 * コードのプル
   * `git pull`
