@@ -76,12 +76,23 @@
   * コミットの登録(コメント必須)
     * `git commit -m 'add your comment'`
 
-* コードのプッシュ
-  * `git push origin master`
-    * originの部分がリモートリポジトリ名、masterの部分がブランチ名
 
 * コードのプル
   * `git pull`
+
+### プッシュ操作
+
+* コードのプッシュ
+  * `git push origin master`
+    * originの部分が対象のリモートリポジトリ名、masterの部分が対象のブランチ名
+    * カレントブランチをpushする
+
+* コードの強制プッシュ
+  * `git push -f origin master`
+  * push先の分岐以降のコミットは失われる
+
+* リモートリポジトリの別ブランチにpush
+ * `git push origin from-branch:to-branch`
 
 ### 設定操作
 
