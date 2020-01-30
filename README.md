@@ -73,6 +73,7 @@
 * コードのコミット
   * まずは作業ツリーからindexへの追加
     * `git add .`
+      * `.`で全ファイル
   * コミットの登録(コメント必須)
     * `git commit -m 'add your comment'`
 
