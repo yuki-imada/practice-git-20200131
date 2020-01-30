@@ -2,6 +2,19 @@
 
 これはgit練習用リポジトリの雛形です。
 
+## 事前準備
+
+* 受講者側
+  * GitHubアカウントの開設
+  * Visual Studio Codeのインストール
+    * 拡張機能「Git Graph」のインストール
+
+* 講師側
+  * 勉強会用リポジトリの用意
+    * 受講者側がpushできるよう設定変更
+      * githubのリポジトリのページ -> Setteings -> Collaborators
+        * 受講者のGitHubアカウントの追加
+
 ## 練習内容
 
 1. GitHubのメール設定
