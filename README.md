@@ -107,7 +107,7 @@
   * push先の分岐以降のコミットは失われる
 
 * リモートリポジトリの別ブランチにpush
- * `git push origin from-branch:to-branch`
+  * `git push origin from-branch:to-branch`
 
 ### 設定操作
 
