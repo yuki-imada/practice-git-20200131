@@ -17,35 +17,46 @@
 
 ## 練習内容
 
+1. github作業用フォルダの作成
+    * 例：`C:\Users\HOGE_USER\git\practice-git-20200131`
+
+1. リポジトリのクローン - clone
+    * リモートリポジトリからローカルリポジトリの作成
+    * `git clone https://github.com/yuki-imada/practice-git-20200131.git`
+
 1. GitHubのメール設定
     * [https://github.com/settings/emails](https://github.com/settings/emails)にアクセス
       * 「Keep my email addresses private」にチェックを入れる
       * 「99999999+xxxxxxxx@users.noreply.github.com」という
         個人用のダミーメールアドレスが発行されているため、この文字列をコピーしておく
-    * 以下のコマンドを実行する
-      * `git config user.email 99999999+xxxxxxxx@users.noreply.github.com`
-        * メールアドレスの部分は先程コピーした個人のメールアドレスを使用
-
-1. リポジトリのクローン - clone
-    * リモートリポジトリからローカルリポジトリの作成
+    * `git config user.email 99999999+xxxxxxxx@users.noreply.github.com`
+      * メールアドレスの部分は先程コピーした個人のメールアドレスを使用
 
 1. ブランチの作成 - branch, checkout
-    * 各自の作業ブランチの作成
+    * 各自の作業ブランチの作成と切り替え
+    * `git checkout -b feature-imada`
 
 1. コードのコミット - add, commit
     * masterブランチで行わないよう注意
+    * `git status`
+    * `git add .`
+    * `git commit -m "this is commit comment."`
 
 1. ブランチの切り替え - branch, checkout
     * ブランチを切り替えると実際のファイルが変更されることを確認
+    * `git checkout master`
 
 1. コードのプッシュ - push
     * GitHub上にブランチが増えていることを確認
+    * `git push origin feature-imada`
 
 1. プッシュの失敗 - push
     * 別コミットが作成されているブランチにpushし、失敗することを確認
+    * `git push origin master`
 
 1. コードのプル - pull
     * historyに他人のブランチが表示されていることを確認
+    * `git pull origin feature-xxx`
 
 1. プルリクエストの送信 - pull requset
     * 各自の作業ブランチのmasterブランチへの取り込み依頼
@@ -107,3 +118,10 @@
 * user情報の更新
   * `git config user.name new_name`
   * `git config user.email new_email`
+
+### その他の操作
+
+* リモートリポジトリにコミットしたファイルを後から管理対象外にしたい場合
+  * .gitignoreに管理対象のファイルを追加
+  * 実ファイルを残したままgitの管理上から削除(--cachedオプション)
+    * `git rm --cached FILE_TO_DELETE`
